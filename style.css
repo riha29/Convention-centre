@@ -63,7 +63,7 @@
     width: 100px;
     margin-left: 67px;
 }
-
+ 
 .pad-left {
     padding-left: 74px;
     padding-top: 10px;
@@ -101,11 +101,7 @@
     font-size: 18px;
     padding-left: 700px;
 }
-.container {
-    position: relative;
-}  
-.container img {vertical-align: middle;}
-.container .content {
+.content {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -116,8 +112,17 @@
 }
 .toasty {
     margin-right: 0px;
-    height: 50px;
+    height: 100px;
     width: 200px;
 }
 
-  
+@media screen and (max-width: 800px) {
+    .biyeshadi, .content, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .biyeshadi, .content , .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
